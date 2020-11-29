@@ -40,7 +40,7 @@
                     </b-form-group>
                 </b-col>
             </b-row>
-            <b-raw>
+            <b-row>
                 <b-col xs="12">
                     <b-button variant="primary" v-if="mode ==='save'"
                         v-on:click="save">Salvar</b-button>
@@ -48,7 +48,7 @@
                         v-on:click="remove">Excluir</b-button>
                     <b-button class="ml-2" v-on:click="reset">Cancelar</b-button>
                 </b-col>
-            </b-raw>
+            </b-row>
         </b-form>
         <hr>
        <b-table hover striped :items="users" :fields="fields">
